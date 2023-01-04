@@ -15,12 +15,7 @@ class Calculator:
         self.create_buttons()
 
         # Create a button for checking the version
-        self.check_version_button = tk.Button(master, text="Check Version", command=self.check_version)
-        self.check_version_button.grid(row=6, column=0, columnspan=2, pady=10)
 
-        # Create a button for updating the version
-        self.update_version_button = tk.Button(master, text="Update Version", command=self.update_version)
-        self.update_version_button.grid(row=6, column=2, columnspan=2, pady=10)
 
         # Connect to the xmlrpc server
         self.client = xmlrpc.client.ServerProxy("http://localhost:8000")
