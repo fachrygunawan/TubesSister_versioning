@@ -89,7 +89,7 @@ while True:
         get_server_time() # mengambil waktu yang ada di server
     elif choice == "3":
         # buka file kalkulator lama dan jalankan isinya
-        with open('calc.py', 'r') as f:
+        with open('old_calc.py', 'r') as f:
             exec(f.read())
     elif choice == "4":
         # jika file kalkulator baru ada di komputer klien
