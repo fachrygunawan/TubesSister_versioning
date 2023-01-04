@@ -27,6 +27,6 @@ class VersionServer: # Mendefinisikan kelas VersionServer
     def get_server_time(self):  # Mendefinisikan fungsi bernama get_server_time
         return str(datetime.datetime.now()) # Mengembalikan waktu saat ini di server
 
-server = xmlrpc.server.SimpleXMLRPCServer(("26.64.160.207", 8000)) # Membuat server XML-RPC yang terhubung ke IP 26.64.160.207 di port 8000
+server = xmlrpc.server.SimpleXMLRPCServer(("localhost", 8000)) # Membuat server XML-RPC yang terhubung ke IP 26.64.160.207 di port 8000
 server.register_instance(VersionServer()) # Mendaftarkan kelas VersionServer sebagai instance
 server.serve_forever() # Menjalankan server selama-lamanya
